@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Deploy Frontend Angular'
                 bat 'docker build -t frontjonathandev .'
-                bat 'docker run -d -p 9090:80 frontjonathandev'
+                bat 'docker run -d -p 9094:80 frontjonathandev'
             }
         }
     }
