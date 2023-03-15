@@ -13,8 +13,8 @@ pipeline {
         stage('Deploy Frontend Web') {
             steps {
                 echo 'Deploy Frontend Angular'
-                bat 'docker build -t frontJonathanDev .'
-                bat 'docker run -d -p 9090:80 frontJonathanDev'
+                bat 'docker build -t frontjonathandev .'
+                bat 'docker run -d -p 9090:80 frontjonathandev'
             }
         }
     }
